@@ -19,16 +19,16 @@
   gulp.task('sass', function () {
     return gulp.src('./sass/*.sass')
         .pipe(sass({ errLogToConsole: true }))
-        .pipe(gulp.dest('./sp/css'));
+        .pipe(gulp.dest('./public/css'));
   });
 
   gulp.task('livereload', function () {
-    gulp.src('./sp/**/*').pipe(connect.reload());
+    gulp.src('./public/**/*').pipe(connect.reload());
   });
 
   gulp.task('watch', function () {
     gulp.watch('./sass/**/*.sass', ['sass']);
-    gulp.watch('./sp/**/*', ['livereload']);
+    gulp.watch('./public/**/*', ['livereload']);
   });
 
   gulp.task('default', ['connect', 'watch', 'sass']);
