@@ -1,0 +1,12 @@
+{
+  "name": "template_pc_ja",
+  "version": "0.1.0",
+  "description": "株式会社WEBマーケティング総合研究所 ACREプロジェクト テーマ作成用gruntファイル",
+  "author": "DangKhoa",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-connect": "^5.0.0",
+    "gulp-sass": "^2.3.2"
+  }
+}
